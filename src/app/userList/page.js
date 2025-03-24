@@ -4,7 +4,7 @@ import Navbar from "@/app/Navbar";
 const page = () => {
   return (
     <div>
-      <Navbar/>
+      {/* <Navbar/> */}
       <h2>This is user List</h2>
       <ul>
         <li>user 1</li>
@@ -19,3 +19,12 @@ const page = () => {
 };
 
 export default page;
+
+
+export function generateMetadata(){
+  return{
+    title: "User List",
+    description: "List of users",
+    keywords: ["user", "list", "nextjs"]
+  }
+}

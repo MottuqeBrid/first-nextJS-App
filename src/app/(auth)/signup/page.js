@@ -4,7 +4,7 @@ import React from "react";
 const page = () => {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <a href="/signup/signin">signin</a>
       <h1>This is registration Page</h1>
     </div>

@@ -5,7 +5,7 @@ const page = () => {
   return (
     <div>
       {/* <a href="/">Home</a> */}
-      <Navbar/>
+      {/* <Navbar/> */}
       <h1>This is about Page</h1>
     </div>
   );

@@ -1,8 +1,9 @@
-const page = ({ params }) => {
+const page = async ({ params }) => {
   //   console.log(params);
+  const { userid } = await params;
   return (
     <div>
-      <p>User Information Is: {params.userid}</p>
+      <p>User Information Is: {userid}</p>
     </div>
   );
 };
