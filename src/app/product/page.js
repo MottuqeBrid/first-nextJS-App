@@ -1,12 +1,17 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 export default function page() {
   const route = useRouter();
-  const placeOrder = () => {
-    alert("Order Confirmed");
-    route.push("/");
+  const [text, setText] = useState();
+  const placeOrder = async () => {
+    // alert("Order Confirmed");
+    setText("Order Confirmed");
+    await setTimeout(() => {
+      route.push("/");
+    }, 1000);
   };
   return (
     <div
@@ -21,6 +26,8 @@ export default function page() {
     >
       <h1> Product Page</h1>
       <li>Buy Iphone</li>
+      <br />
+      <p>{text}</p>
       <br />
       <button className="" onClick={placeOrder}>
         Confirm Order
