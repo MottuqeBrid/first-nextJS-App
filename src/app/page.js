@@ -1,4 +1,5 @@
 // "use client";
+import Navbar from "./Navbar";
 import styles from "./page.module.css";
 import State from "./State";
 
@@ -6,6 +7,7 @@ export default function Home() {
   return (
     <div>
       <main>
+        <Navbar />
         <h1
           style={{
             backgroundColor: "lightblue",
