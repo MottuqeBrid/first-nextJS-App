@@ -1,17 +1,12 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useState } from "react";
 
-const page = () => {
-  const [text, setText] = useState();
+export default function page() {
   const route = useRouter();
-  const placeOrder = async () => {
-    // alert("Order Confirmed");
-    setText("Order Confirmed!");
-    setTimeout(() => {
-      route.push("/");
-    }, 1500); // simulate delay for 1.5 second before redirecting to home page
+  const placeOrder = () => {
+    alert("Order Confirmed");
+    route.push("/");
   };
   return (
     <div
@@ -27,12 +22,11 @@ const page = () => {
       <h1> Product Page</h1>
       <li>Buy Iphone</li>
       <br />
-      <p>{text}</p>
       <button className="" onClick={placeOrder}>
         Confirm Order
       </button>
     </div>
   );
-};
+}
 
-export default page;
+// export default page;
