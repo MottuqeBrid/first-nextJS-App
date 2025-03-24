@@ -28,3 +28,8 @@ a {
   background-color: blueviolet;
   border-radius: 5px;
 }
+
+.active{
+  background-color: lightblue;
+  color: black;
+}
