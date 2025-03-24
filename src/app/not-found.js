@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const notFound = () => {
@@ -22,7 +23,8 @@ const notFound = () => {
       >
         Page Not Found...!
       </h3>
-      <a
+
+      <Link
         style={{
           color: "#333",
           textDecoration: "none",
@@ -35,7 +37,7 @@ const notFound = () => {
         href="/"
       >
         Go to Home Page
-      </a>
+      </Link>
     </div>
   );
 };
